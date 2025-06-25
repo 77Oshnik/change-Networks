@@ -1,12 +1,46 @@
-# React + Vite
+# Frontend - Task Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the frontend for the Task Manager application, built with React and Vite.
 
-Currently, two official plugins are available:
+## Features
+- User authentication (login/logout)
+- Dashboard with task statistics
+- Task management (create, update, delete)
+- User management (admin only)
+- Responsive UI
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Structure
+```
+frontend/task-manager/
+  public/           # Static assets
+  src/
+    assets/        # Images and icons
+    components/    # React components
+    context/       # React context providers
+    services/      # API service functions
+    utils/         # Utility functions/constants
+    App.jsx        # Main app component
+    main.jsx       # Entry point
+  package.json     # Project metadata and scripts
+  vite.config.js   # Vite configuration
+```
 
-## Expanding the ESLint configuration
+## Setup
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Start the development server:
+   ```bash
+   npm run dev
+   ```
+3. The app will be available at `http://localhost:5173` by default.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Scripts
+- `npm run dev` - Start the development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview the production build
+
+---
+
+Make sure the backend server is running for API requests to work.
